@@ -1,5 +1,5 @@
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 header {
   height: 75px;
@@ -17,6 +17,8 @@ header {
 }
 .main_nav h1{
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: thin;
     
 }
 
