@@ -7,6 +7,10 @@ header {
   background-color: #1c1c1c;
   position: fixed;
 }
+
+#about {
+  
+}
 .main_nav {
   display: flex;
   margin-top: 15px;
@@ -98,7 +102,8 @@ div.container a {
   position: absolute;
   left: 0;
   top: 0;
-  height: 1000px;
+  height: 100%;
+  width: 100%;
   z-index: -1;
 }
 .me {
@@ -135,6 +140,7 @@ div.container a {
 
 .photo img {
   border-radius: 50%;
+ 
 }
 .header{
   position: relative;

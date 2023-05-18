@@ -223,7 +223,7 @@ rubberbandAnimation.forEach((element) => {
     if (!ctx.running) return;
 
     ctx.globalCompositeOperation = "source-over";
-    ctx.fillStyle = "rgba(8,5,16,0.4)";
+    ctx.fillStyle = "#1d1d1d";
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     ctx.globalCompositeOperation = "lighter";
     ctx.strokeStyle = "hsla(" + Math.round(hue.update()) + ",90%,50%,0.25)";
@@ -330,7 +330,7 @@ rubberbandAnimation.forEach((element) => {
       document.body.appendChild(form);
     }
 
-    buffer.ctx.fillStyle = "rgba(8,5,16)";
+    buffer.ctx.fillStyle = "#1d1d1d";
     buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
 
     buffer.ctx.drawImage(
