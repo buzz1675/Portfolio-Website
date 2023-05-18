@@ -1,20 +1,24 @@
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
 }
 header {
   height: 100px;
-  width: 110%;
-  margin-left: -20px;
+  width: 100%;
   background-color: #1d1d1d;
   position: fixed;
-  box-shadow: 0 2px 20px -2px rgba(255, 255, 255, 0.589)
+  box-shadow: 0 2px 20px -2px rgba(255, 255, 255, 0.589);
+  z-index: 999;
+}
+.main{
+  background-color: #1d1d1d;
 }
 
 .main_nav {
   display: flex;
-  margin-top: 15px;
   justify-content: space-around;
   align-items: center;
+  margin-top: 22.5px;
   color: white;
 }
 .main_nav a {
@@ -75,8 +79,24 @@ div.container a {
   cursor: pointer;
 }
 
+.myName {
+  height: auto;
+  width: 100%;
+  margin-top: -30px;
+  padding: 150px 20px;
+  /* background-image: url(../imgs/wallpaperflare.com_wallpaper.jpg);
+  background-image: url(../imgs/rm378-09.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  z-index: ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .about_me {
   height: auto;
+  background-color: #1d1d1d;
   width: 100%;
   margin-top: -30px;
   padding: 150px 20px;
@@ -106,7 +126,8 @@ div.container a {
   left: 0;
   top: 0;
   height: 100%;
-  width: 110%;
+  width: 100%;
+  margin: 0px;
   z-index: -1;
 }
 .me {
