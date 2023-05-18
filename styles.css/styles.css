@@ -139,11 +139,12 @@ div.container a {
 
 .header span {
   display: inline-block;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .pop:hover {
-  animation: rubberBand 1s;
+  animation: rubberBand;
+  animation-duration: 1s;
   color: cyan;
 }
 

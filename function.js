@@ -29,7 +29,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//about me rubberband animation
 
+let rubberbandAnimation = document.querySelectorAll(".pop");
+for (let i = 0; i < 8; i++) {
+  rubberbandAnimation[i].addEventListener("onmouseover", function () {
+    rubberbandAnimation[i].classList.add("rubberBand");
+    setTimeout(function () {
+      rubberbandAnimation[i].classList.remove("rubberBand");
+    }, 1000);
+  });
+}
 
 /* this is the cursor code */
 (function (window) {
