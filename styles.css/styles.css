@@ -77,7 +77,7 @@ div.container a {
 
 .about_me {
   height: auto;
-  width: 101%;
+  width: 100%;
   margin-top: -30px;
   padding: 150px 20px;
   /* background-image: url(../imgs/wallpaperflare.com_wallpaper.jpg);
@@ -110,7 +110,7 @@ div.container a {
   z-index: -1;
 }
 .me {
-  width: 500px;
+  width: auto;
   line-height: 30px;
   color: white;
   text-align: left;
@@ -121,7 +121,9 @@ div.container a {
   text-align: left;
   font-size: 100px;
 }
-
+.me p {
+  margin-top: -50px;
+}
 .me li {
   margin-left: -20px;
   list-style-type: none;
@@ -154,12 +156,13 @@ div.container a {
   font-size: 60px;
   font-weight: 600;
   margin-left: -25px;
+  margin-top: 30px;
 }
 
 #hi-my-name{
   position: relative;
-  margin-top: 100px;
-  margin-bottom: -70px;
+  margin-top: 300px;
+  margin-bottom: -100px;
   font-weight: 200;
   color: cyan;
 }
