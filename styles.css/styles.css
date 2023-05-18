@@ -136,17 +136,25 @@ div.container a {
 .photo img {
   border-radius: 50%;
 }
-
+.header{
+  position: relative;
+  margin-left: 20px;
+}
 .header span {
   display: inline-block;
   font-size: 60px;
+  margin-left: -20px;
 }
 
 .pop:hover {
-  animation: rubberBand;
-  animation-duration: 1s;
   color: cyan;
 }
+
+.rubberBand{
+  animation: rubberBand;
+  animation-duration: 1s;
+}
+  
 
 @keyframes rubberBand {
   from {

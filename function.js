@@ -31,15 +31,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //about me rubberband animation
 
-let rubberbandAnimation = document.querySelectorAll(".pop");
-for (let i = 0; i < 8; i++) {
-  rubberbandAnimation[i].addEventListener("onmouseover", function () {
-    rubberbandAnimation[i].classList.add("rubberBand");
-    setTimeout(function () {
-      rubberbandAnimation[i].classList.remove("rubberBand");
+const rubberbandAnimation = document.querySelectorAll(".pop");
+
+rubberbandAnimation.forEach((element) => {
+  let animationTimeout;
+
+  element.addEventListener("mouseenter", function () {
+    clearTimeout(animationTimeout);
+    this.classList.add("rubberBand");
+  });
+
+  element.addEventListener("mouseleave", function () {
+    const letter = this;
+    animationTimeout = setTimeout(function () {
+      letter.classList.remove("rubberBand");
     }, 1000);
   });
-}
+
+  element.addEventListener("animationend", function () {
+    clearTimeout(animationTimeout);
+    this.classList.remove("rubberBand");
+  });
+});
 
 /* this is the cursor code */
 (function (window) {
