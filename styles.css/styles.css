@@ -5,13 +5,11 @@ header {
   height: 100px;
   width: 110%;
   margin-left: -20px;
-  background-color: #807d7d;
+  background-color: #1d1d1d;
   position: fixed;
+  box-shadow: 0 2px 20px -2px rgba(255, 255, 255, 0.589)
 }
 
-#about {
-  
-}
 .main_nav {
   display: flex;
   margin-top: 15px;
@@ -42,6 +40,10 @@ div.borderYtoX a:after {
 div.borderYtoX a:before {
   left: 0px;
   top: 0px;
+}
+
+div.borderYtoX a.current {
+ background-color: cyan;
 }
 
 div.borderYtoX a:after {
