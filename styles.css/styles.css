@@ -1,6 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+  padding: 0;
 }
 header {
   height: 100px;
@@ -80,8 +81,7 @@ div.container a {
 }
 
 .myName {
-  height: auto;
-  width: 100%;
+  height: 500px;
   margin-top: -30px;
   padding: 150px 20px;
   /* background-image: url(../imgs/wallpaperflare.com_wallpaper.jpg);
@@ -127,7 +127,9 @@ div.container a {
   top: 0;
   height: 100%;
   width: 100%;
-  margin: 0px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
   z-index: -1;
 }
 .me {
@@ -166,7 +168,8 @@ div.container a {
 
 .photo img {
   border-radius: 50%;
- 
+ padding: 0;
+ margin: 0;
 }
 .header{
   position: relative;
