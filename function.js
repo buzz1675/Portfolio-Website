@@ -1,33 +1,41 @@
 // code for bullet points to open when clicked
 document.addEventListener("DOMContentLoaded", function () {
   const bullets = document.querySelectorAll(".bullet");
+  const liHovers = document.querySelectorAll(".li_hover");
   let openBullet = null;
 
   bullets.forEach(function (bullet) {
-    bullet.addEventListener("click", function () {
-      const listItem = this.parentNode;
-      const hiddenInfo = listItem.querySelector(".hidden-info");
-
-      if (openBullet && openBullet !== listItem) {
-        const openBulletHiddenInfo = openBullet.querySelector(".hidden-info");
-        const openBulletButton = openBullet.querySelector(".bullet");
-
-        openBulletHiddenInfo.style.display = "none";
-        openBulletButton.textContent = "+";
-      }
-
-      if (hiddenInfo.style.display === "none") {
-        hiddenInfo.style.display = "block";
-        this.textContent = "-";
-        openBullet = listItem;
-      } else {
-        hiddenInfo.style.display = "none";
-        this.textContent = "+";
-        openBullet = null;
-      }
-    });
+    bullet.addEventListener("click", toggleHiddenInfo);
   });
+
+  liHovers.forEach(function (liHover) {
+    liHover.addEventListener("click", toggleHiddenInfo);
+  });
+
+  function toggleHiddenInfo() {
+    const listItem = this.parentNode;
+    const hiddenInfo = listItem.querySelector(".hidden-info");
+
+    if (openBullet && openBullet !== listItem) {
+      const openBulletHiddenInfo = openBullet.querySelector(".hidden-info");
+      const openBulletButton = openBullet.querySelector(".bullet");
+
+      openBulletHiddenInfo.style.display = "none";
+      openBulletButton.textContent = "+";
+    }
+
+    if (hiddenInfo.style.display === "none") {
+      hiddenInfo.style.display = "block";
+      this.parentNode.querySelector(".bullet").textContent = "-";
+      openBullet = listItem;
+    } else {
+      hiddenInfo.style.display = "none";
+      this.parentNode.querySelector(".bullet").textContent = "+";
+      openBullet = null;
+    }
+  }
 });
+
 
 //about me rubberband animation
 
