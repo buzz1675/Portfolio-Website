@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//scroll button code 
 document.addEventListener("DOMContentLoaded", function () {
   const scrollButton = document.querySelector(".scroll-down-button");
 
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
 
 
 //about me rubberband animation

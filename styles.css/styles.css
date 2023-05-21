@@ -115,6 +115,7 @@ div.container a {
   flex-wrap: wrap;
 }
 
+
 .about_me {
   color: white;
   width: 500px;
@@ -401,7 +402,7 @@ margin-top: 120px;
 
 #first .badge,
 #first .icon {
-  background-color: green;
+  background-color: red;
 }
 
 /* ^^^^ timeline styles ^^^^ */
