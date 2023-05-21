@@ -192,6 +192,18 @@ margin-bottom: -20px;
   font-size: 15px;
   line-height: 22px;
 }
+
+li:hover .li_hover{
+  cursor: pointer;
+  display: inline-block;
+  transform: scale(1.2);
+  margin-left: 5px;
+}
+li:hover .bullet{
+  cursor: pointer;
+  display: inline-block;
+  transform: scale(1.5);
+}
 .photo{
   margin-top: 250px;
   
