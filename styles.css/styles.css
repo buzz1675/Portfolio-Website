@@ -7,6 +7,9 @@ header {
   height: 100px;
   width: 100%;
   background-color: #1d1d1d;
+  background-image: url("../imgs/header 1400x100.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: fixed;
   left: 0;
   top: 0;
@@ -96,11 +99,11 @@ div.container a {
   justify-content: space-around;
 }
 
-.profile_pic{
+.profile_pic {
   padding: 50px;
 }
-.profile_pic img{
-  height: 500px
+.profile_pic img {
+  height: 500px;
 }
 
 .about_container {
@@ -109,24 +112,24 @@ div.container a {
   padding: 50px 50px 250px 50px;
   display: flex;
   justify-content: center;
-  
+  flex-wrap: wrap;
 }
-.about_me{
+
+.about_me {
   color: white;
   width: 500px;
   padding: 50px;
   font-family: "Inter", sans-serif;
 }
 
-.about_me h2{
-font-size: 75px;
-margin-top: -10px;
-font-weight: 200;
-margin-bottom: -20px;
+.about_me h2 {
+  font-size: 75px;
+  margin-top: -10px;
+  font-weight: 200;
+  margin-bottom: -20px;
 }
 
-
-.about_me p{
+.about_me p {
   line-height: 30px;
 }
 
@@ -137,10 +140,9 @@ margin-bottom: -20px;
   line-height: 40px;
 }
 
-.about_me_content{
+.about_me_content {
   margin-top: 50px;
 }
-
 
 /*.me {
   color: white;
@@ -180,7 +182,6 @@ margin-bottom: -20px;
   margin-top: -50px;
 }
 
-
 .bullet {
   display: inline-block;
   margin-right: 5px;
@@ -193,20 +194,19 @@ margin-bottom: -20px;
   line-height: 22px;
 }
 
-li:hover .li_hover{
+li:hover .li_hover {
   cursor: pointer;
   display: inline-block;
   transform: scale(1.2);
   margin-left: 5px;
 }
-li:hover .bullet{
+li:hover .bullet {
   cursor: pointer;
   display: inline-block;
   transform: scale(1.5);
 }
-.photo{
+.photo {
   margin-top: 250px;
-  
 }
 .photo img {
   border-radius: 50%;
@@ -265,19 +265,51 @@ li:hover .bullet{
   }
 }
 
+.scroll-down-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-down-button:hover {
+  background-color: #555;
+}
+
+.scroll_container {
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+  padding-bottom: 100px;
+}
 /* timeline styles */
 
-.timeline_container_background{
+.timeline_container_background {
   background-color: #464545;
   padding: 10px;
 }
-.timeline_container{
+
+.timeline_title h2{
+color: white;
+font-size: 70px;
+font-weight: 400;
+text-align: center;
+margin-top: 120px;
+}
+.timeline_title p{
+  color: cyan;
+  text-align: center;
+  margin-top: -50px;
+  }
+
+.timeline_container {
   max-width: 650px;
   margin: 50px auto;
-  
 }
 
-.timeline_container p{
+.timeline_container p {
   color: white;
   font-weight: 300;
   line-height: 1.5;
@@ -285,14 +317,14 @@ li:hover .bullet{
   opacity: 0.95;
 }
 
-.timeline{
+.timeline {
   position: relative;
   padding-left: 4rem;
   margin: 0 0 0 30px;
   color: white;
 }
 
-.timeline::before{
+.timeline::before {
   content: " ";
   width: 4px;
   height: 99%;
@@ -303,12 +335,12 @@ li:hover .bullet{
   top: 15px;
 }
 
-.timeline .timeline_box{
+.timeline .timeline_box {
   position: relative;
   margin-bottom: 2.5rem;
 }
 
-.timeline .timeline_box .icon{
+.timeline .timeline_box .icon {
   position: absolute;
   left: -88px;
   top: 4px;
@@ -320,26 +352,26 @@ li:hover .bullet{
   background-color: midnightblue;
 }
 
-.timeline .timeline_box .icon i{
+.timeline .timeline_box .icon i {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.timeline .timeline_box .timeline_body{
+.timeline .timeline_box .timeline_body {
   background-color: grey;
   border-radius: 6px;
   padding: 20px 18px 15px 20px;
-  box-shadow: 1px 3px 9px rgba(0,0,0,0.1);
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
-.timeline .timeline_box .timeline_body:hover{
-  box-shadow: 1px 3px 20px rgba(0,0,0,0.6);
+.timeline .timeline_box .timeline_body:hover {
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.6);
 }
 
-.timeline .timeline_box .timeline_body::before{
+.timeline .timeline_box .timeline_body::before {
   content: "";
   background-color: inherit;
   width: 20px;
@@ -351,15 +383,15 @@ li:hover .bullet{
   border-radius: 0 0 0 3px;
 }
 
-.timeline .timeline_box .timeline_body .timeline_header .badge{
+.timeline .timeline_box .timeline_body .timeline_header .badge {
   background-color: aquamarine;
-  padding: 4px 8px ;
+  padding: 4px 8px;
   font-size: 12px;
   border-radius: 4px;
   font-weight: bold;
 }
 
-.timeline .timeline_box .timeline_body .time{
+.timeline .timeline_box .timeline_body .time {
   font-weight: 300;
   font-style: italic;
   opacity: 0.4;
@@ -367,6 +399,9 @@ li:hover .bullet{
   font-size: 11px;
 }
 
-#first .badge, #first .icon{
-background-color: green;
+#first .badge,
+#first .icon {
+  background-color: green;
 }
+
+/* ^^^^ timeline styles ^^^^ */

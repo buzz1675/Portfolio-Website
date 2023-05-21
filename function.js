@@ -36,6 +36,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.querySelector(".scroll-down-button");
+
+  if (scrollButton) {
+    scrollButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetSection = document.querySelector(this.getAttribute("href"));
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  }
+});
+
 
 //about me rubberband animation
 
