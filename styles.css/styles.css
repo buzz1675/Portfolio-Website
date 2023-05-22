@@ -200,11 +200,13 @@ li:hover .li_hover {
   display: inline-block;
   transform: scale(1.2);
   margin-left: 5px;
+  color: cyan;
 }
 li:hover .bullet {
   cursor: pointer;
   display: inline-block;
   transform: scale(1.5);
+  color: cyan;
 }
 .photo {
   margin-top: 250px;
@@ -299,8 +301,15 @@ li:hover .bullet {
 /* timeline styles */
 
 .timeline_container_background {
-  background-color: #464545;
+  background: linear-gradient(to bottom, #1d1d1d, #4b4a4a);
   padding: 10px;
+  
+}
+
+
+
+.timeline_title{
+  z-index: 999;
 }
 
 .timeline_title h2{
