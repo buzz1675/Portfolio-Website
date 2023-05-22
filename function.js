@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //scroll button code 
 document.addEventListener("DOMContentLoaded", function () {
-  const scrollButton = document.querySelector(".scroll-down-button");
+  const scrollButtons = document.querySelectorAll(".scroll-down-button, .scroll-down-button.mirror");
 
-  if (scrollButton) {
+  scrollButtons.forEach(function (scrollButton) {
     scrollButton.addEventListener("click", function (event) {
       event.preventDefault();
       const targetSection = document.querySelector(this.getAttribute("href"));
@@ -52,8 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
-  }
+  });
 });
+
 
 
 
