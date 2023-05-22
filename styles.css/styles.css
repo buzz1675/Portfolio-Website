@@ -267,28 +267,28 @@ li:hover .bullet {
 }
 
 .scroll-down-button {
-  padding: 10px;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 100;
   background-color: transparent;
-  color: white;
+  color: cyan;
   text-decoration: none;
-  border: none;
+  border: 1px cyan solid;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  position: absolute;
-  bottom: 20px;
-  left: ;
-  z-index: 999;
-
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -300px;
 }
 
-.scroll-down-button.mirror {
-  right: 20px;
- 
+.scroll_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 
 .scroll-down-button:hover {
