@@ -320,7 +320,6 @@ rubberbandAnimation.forEach((element) => {
         save();
         break;
       default:
-      // console.log(event.keyCode); hovertree.com
     }
   }
 
