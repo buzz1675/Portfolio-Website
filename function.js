@@ -83,6 +83,39 @@ rubberbandAnimation.forEach((element) => {
   });
 });
 
+/* sphere code */
+
+const myTags = [
+  'JavaScript', 'CSS', 'HTML',
+  'C', 'C++', 'React',
+  'Python', 'Java', 'git',
+  'django', 'Node.js', 'OpenCV',
+  'GCP', 'MySQL', 'jQuery',
+];
+
+var tagCloud = TagCloud('.content', myTags,{
+
+  // radius in px
+  radius: 200,
+
+  // animation speed
+  // slow, normal, fast
+  maxSpeed: 'normal',
+  initSpeed: 'normal',
+
+  // 0 = top
+  // 90 = left
+  // 135 = right-bottom
+  direction: 135,
+
+  // interact with cursor move on mouse out
+  keep: true
+
+}); 
+
+
+
+
 /* this is the cursor code */
 (function (window) {
   var ctx,
@@ -103,9 +136,6 @@ rubberbandAnimation.forEach((element) => {
 
   Math.TWO_PI = Math.PI * 2;
 
-  // ========================================================================================
-  // Oscillator 何问起
-  // ----------------------------------------------------------------------------------------
 
   function Oscillator(options) {
     this.init(options || {});
@@ -134,9 +164,6 @@ rubberbandAnimation.forEach((element) => {
     };
   })();
 
-  // ========================================================================================
-  // Tendril hovertree.com
-  // ----------------------------------------------------------------------------------------
 
   function Tendril(options) {
     this.init(options || {});
