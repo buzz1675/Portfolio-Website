@@ -489,5 +489,33 @@ p.italic{
   font-weight: 200;
 }
 
+div.skill_gallery{
+  padding-top: 1px;
+background-color: #1d1d1d;
+}
 
+p.black_italic{
+   font-style: italic;
+  color: white;
+}
+#skill_gallery{
+  padding: 100px;
+}
 
+#skill_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skill_gallery img {
+height: 400px;
+margin: 5px; /* Adjust the margin between images */
+filter: grayscale(100%);
+transition: filter 0.3s;
+}
+
+#skill_gallery img:hover{
+  filter: grayscale(0%);
+  cursor: pointer;
+}
