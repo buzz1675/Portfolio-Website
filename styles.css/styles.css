@@ -499,12 +499,17 @@ p.black_italic{
   color: white;
 }
 
-
+.skills_page{
+  background-color: #1d1d1d;
+}
 #skill_gallery {
   padding: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  background-color: #1d1d1d;
+
 }
 
 
@@ -518,4 +523,14 @@ transition: filter 0.3s;
 #skill_gallery img:hover{
   filter: grayscale(0%);
   cursor: pointer;
+}
+
+#skill_gallery .info_box{
+  display: none;
+  margin-top: -400px;
+  color: white;
+}
+
+.image_container {
+  margin-bottom: 100px; /* Match the negative margin-top value of .info_box */
 }

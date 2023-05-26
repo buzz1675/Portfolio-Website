@@ -475,3 +475,23 @@ var tagCloud = TagCloud('.content', myTags,{
 
 
 
+function showInfo(index) {
+  const imageContainers = document.getElementsByClassName('image_container');
+  const infoBox = imageContainers[index].querySelector('.info_box');
+
+  // Toggle visibility of info box
+  if (infoBox.style.display === 'none' || infoBox.style.display === '') {
+    // Hide all info boxes first
+    for (let i = 0; i < imageContainers.length; i++) {
+      const currentInfoBox = imageContainers[i].querySelector('.info_box');
+      currentInfoBox.style.display = 'none';
+      currentInfoBox.style.marginLeft = '0';
+    }
+
+    infoBox.style.display = 'block';
+    infoBox.style.marginLeft = `${imageContainers[index].offsetWidth}px`;
+  } else {
+    infoBox.style.display = 'none';
+    infoBox.style.marginLeft = '0';
+  }
+}
