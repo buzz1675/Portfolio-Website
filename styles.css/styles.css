@@ -498,15 +498,15 @@ p.black_italic{
    font-style: italic;
   color: white;
 }
-#skill_gallery{
-  padding: 100px;
-}
+
 
 #skill_gallery {
+  padding: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 #skill_gallery img {
 height: 400px;
