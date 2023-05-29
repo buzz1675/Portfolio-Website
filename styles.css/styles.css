@@ -515,7 +515,7 @@ p.black_italic{
 
 #skill_gallery img {
 height: 400px;
-margin: 5px; /* Adjust the margin between images */
+margin: 5px;
 filter: grayscale(100%);
 transition: filter 0.3s;
 }
@@ -532,5 +532,12 @@ transition: filter 0.3s;
 }
 
 .image_container {
-  margin-bottom: 100px; /* Match the negative margin-top value of .info_box */
+  margin-bottom: 100px; 
+}
+
+h2.more_to_come{
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 50px;
 }
