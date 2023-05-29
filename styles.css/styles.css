@@ -529,10 +529,13 @@ transition: filter 0.3s;
   display: none;
   margin-top: -400px;
   color: white;
+  margin-left: -200px;
+  width: 300px;
 }
 
 .image_container {
   margin-bottom: 100px; 
+  max-width: 700px;
 }
 
 h2.more_to_come{
